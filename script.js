@@ -53,6 +53,8 @@
 // console.log (true == "1")
 // console.log(true == "true")
 // console.log(1 == [1])
+
+
 // function soma (a,b){
 // return a + b}
 // const res = soma (2, 3)
@@ -79,3 +81,50 @@
 //const valores = [1, 2, 3, 4]
 //const soma = valores.reduce((ac, v) => ac + v)
 //console.log(soma)
+
+
+//closures
+//let umaFuncao = function(){
+    //console.log('Fui armazenada em uma variavel')
+//}
+//umaFuncao()
+//function f(funcao){
+    //funcao()
+//}
+//f(umaFuncao)
+
+
+//function g(){
+    //function outraFuncao(){
+        //console.log('Fui criada por g')
+    //}
+    //return outraFuncao
+//}
+
+//f(g) chama a funcao g na funcao f
+//g ()() voce consegue chamar a (outraFuncao) assim como na debaixo
+// const gResult = g()
+    // gResult()
+//function f(){
+    //let nome = 'Joao'
+    //function g(){
+        //console.log(nome)
+    //}
+    //g()
+//}
+//f() a funcao g pode usar o nome que esta na funcao f
+
+//function ola(){
+    //let nome = 'joao'
+    //return function(){
+        //console.log(`Ola, ${nome}`)
+   // }
+//}
+//let olaResult = ola()
+//olaResult()
+// function saudacoesFactory(saudacao, nome){
+    //let a
+    //return function(){
+        //console.log(`${saudacao} ${nome}`)
+    //}
+//}
