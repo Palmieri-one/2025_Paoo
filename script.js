@@ -128,3 +128,19 @@
         //console.log(`${saudacao} ${nome}`)
     //}
 //}
+
+console.log('Começando...')
+function calculoRapidinho(n){
+    return  n >= 0 ? Promise.resolve((n / 2) * (n + 1)) : Promise.reject('Somente valores positivos, por favor');
+}
+ 
+let minhaPromise = calculoRapidinho(10)
+minhaPromise
+    .then((res) => {
+        console.log(`Resultado: ${res}`)
+    })
+    .catch((erro) => {
+        console.log(`Erro: ${erro}`)
+    })
+ 
+console.log('Terminando...')
